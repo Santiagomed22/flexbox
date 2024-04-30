@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: aqua;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  text-align: justify;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+body {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.row {
+  display: flex;
+}
+
+.aside {
+  background-color: brown;
+  padding: 10px;
+  flex: 30%;
+}
+
+.section {
+  background-color: blue;
+  padding: 10px;
+  flex: 70%;
+}
+
+.video {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  height: calc(100vw * 50 / 100);
+}
+
+@media screen and (max-width: 56.25rem) {
+  .row {
+    flex-direction: column;
+  }
+}
