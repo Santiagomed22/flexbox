@@ -46,6 +46,39 @@ body {
   height: calc(100vw * 50 / 100);
 }
 
+.tarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 35px;
+  justify-content: space-between;
+}
+
+.tarjetas .card {
+  background-color: aquamarine;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  overflow: auto;
+  box-shadow: 5px 5px 8px red;
+  padding: 10px;
+  aspect-ratio: 700/1200;
+}
+
+.tarjetas .card:hover {
+  background-color: black;
+  color: antiquewhite;
+  transform: scale(1.1);
+}
+
+.tarjetas .contenido p:first-child {
+  color: blue;
+  border-bottom: 2px dashed green;
+  text-align: center;
+}
+
 @media screen and (max-width: 56.25rem) {
   .row {
     flex-direction: column;
