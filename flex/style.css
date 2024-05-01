@@ -18,6 +18,11 @@ p {
   margin-bottom: 10px;
 }
 
+h2 {
+  margin: 30px;
+  text-align: center;
+}
+
 body {
   margin-left: 50px;
   margin-right: 50px;
@@ -77,6 +82,34 @@ body {
   color: blue;
   border-bottom: 2px dashed green;
   text-align: center;
+}
+
+/*============ CUADROS =================*/
+
+.cuadro {
+  background-color: rgb(125, 11, 187);
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  gap: 20px;
+  padding: 20px;
+  color: aliceblue;
+  border-radius: 20px;
+}
+
+.cuadro .imagen {
+  width: 500px;
+}
+
+@media screen and (max-width: 850px) {
+  .cuadro {
+    flex-direction: column-reverse;
+  }
+  .cuadro .imagen {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 56.25rem) {
